@@ -16,6 +16,8 @@ services:
       - CHOKIDAR_USEPOLLING=TRUE
       - CHOCKIDAR_INTERVAL=100
     command: "npm run dev"
+    # user: ${MY_USER}
+    # MY_USER=$(id -u):$(id -g) docker compose up
     tty: true
 
   backend:
